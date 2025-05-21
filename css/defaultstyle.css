@@ -3,16 +3,9 @@ body {
     background-color: #161616;
 }
 
-p {
-    font-family: 'Trebuchet MS', sans-serif;
-}
-
 @keyframes hue-anim{
     0% {filter:hue-rotate(0deg);}
     25% {filter:hue-rotate(90deg);}
-    35% {opacity: 100%;}
-    40% {opacity: 0%;}
-    45% {opacity: 100%;}
     50% {filter:hue-rotate(180deg);}
     75% {filter:hue-rotate(270deg);}
     100% {filter:hue-rotate(360deg);}
@@ -21,6 +14,11 @@ p {
 @keyframes fade-in-anim {
     from {opacity: 0%;}
     to {opacity: 100%;}
+}
+
+@font-face {
+    font-family: 'SF Distant Galaxy Regular';
+    src: url('fonts/SFDistantGalaxy.ttf') format('TrueType');
 }
 
 .hue-shift {
@@ -36,15 +34,16 @@ p {
     animation-duration: 2s;
 }
 
-.top-bar {
+.top-bar { /* This is the styling for the navigation bar */
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    flex-wrap: wrap;
     gap: 5%;
     border-bottom: 2px solid white;
-    margin-right: 15%;
-    margin-left: 15%;
+    margin-right: 10%;
+    margin-left: 10%;
 }
 
 .top-bar-logo {
@@ -53,16 +52,16 @@ p {
     padding-top: 5px;
     padding-bottom: 10px;
     padding-left: 1%;
-    height: 35px;
+    height: 42px;
 }
 
 .top-bar-text {
     display: flex;
     font-family: 'Trebuchet MS', sans-serif;
-    font-size: large;
+    font-size: 20px;
     text-decoration: none;
     color: white;
-    padding-bottom: 3px;
+    padding-bottom: 5px;
 }
 
 .top-bar-text:hover {
@@ -80,22 +79,52 @@ p {
     filter: invert();
 }
 
-.intro-box {
+.intro-box { /* This is the styling for the intro box */
     display: flex;
     flex-direction: row;
-    margin-right: 15%;
-    margin-left: 15%;
+    justify-content: flex-start;
+    margin-right: 10%;
+    margin-left: 10%;
 }
 
 .intro-text {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 40px;
 }
 
 h1 {
+    font-family: 'SF Distant Galaxy Regular', sans-serif;
+    font-weight: 200;
+    font-size: 120px;
+    line-height: -200px;
     color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 h2 {
+    font-family: 'SF Distant Galaxy Regular', sans-serif;
+    font-weight: 200;
+    font-size: 55px;
+    line-height: 70px;
     color: white;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.intro-description {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 26px;
+    font-style: italic;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.intro-shapes {
+    flex-basis: auto;
+    margin-left: -60px;
 }

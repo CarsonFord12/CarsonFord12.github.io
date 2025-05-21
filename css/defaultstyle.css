@@ -1,6 +1,6 @@
 
 body {
-    background-color: #161616;
+    background-color: #111111;
 }
 
 @keyframes hue-anim{
@@ -42,8 +42,8 @@ body {
     flex-wrap: wrap;
     gap: 5%;
     border-bottom: 2px solid white;
-    margin-right: 10%;
-    margin-left: 10%;
+    margin-right: 12%;
+    margin-left: 12%;
 }
 
 .top-bar-logo {
@@ -83,8 +83,8 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin-right: 10%;
-    margin-left: 10%;
+    margin-right: 12%;
+    margin-left: 12%;
 }
 
 .intro-text {
@@ -92,7 +92,7 @@ body {
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-    margin-left: 40px;
+    margin-left: 60px;
 }
 
 h1 {
@@ -101,7 +101,7 @@ h1 {
     font-size: 120px;
     line-height: -200px;
     color: white;
-    margin-top: 10px;
+    margin-top: 0px;
     margin-bottom: 10px;
 }
 
@@ -111,14 +111,13 @@ h2 {
     font-size: 55px;
     line-height: 70px;
     color: white;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .intro-description {
     font-family: 'Trebuchet MS', sans-serif;
     font-size: 26px;
-    font-style: italic;
     color: white;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -127,4 +126,40 @@ h2 {
 .intro-shapes {
     flex-basis: auto;
     margin-left: -60px;
+    
+}
+
+.intro-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    margin-left: -50px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.intro-contact {
+    color: black;
+    background-color: #ffffff;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 28px;
+    font-weight: bolder;
+    border-radius: 25px;
+}
+
+.intro-contact:hover {
+    color: #67b6e4;
+}
+
+.intro-portfolio {
+    color: white;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.intro-portfolio:hover {
+    color: #67b6e4;
 }

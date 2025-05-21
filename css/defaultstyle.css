@@ -1,6 +1,10 @@
 
 body {
-    background-color: #2e2e2e;
+    background-color: #161616;
+}
+
+p {
+    font-family: 'Trebuchet MS', sans-serif;
 }
 
 @keyframes hue-anim{
@@ -30,4 +34,68 @@ body {
     opacity: 0%;
     animation-name: fade-in-anim;
     animation-duration: 2s;
+}
+
+.top-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5%;
+    border-bottom: 2px solid white;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.top-bar-logo {
+    display: flex;
+    margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 1%;
+    height: 35px;
+}
+
+.top-bar-text {
+    display: flex;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: large;
+    text-decoration: none;
+    color: white;
+    padding-bottom: 3px;
+}
+
+.top-bar-text:hover {
+    color: #67b6e4;
+}
+
+.top-bar-menu {
+    display: flex;
+    padding-bottom: 3px;
+    padding-right: 1%;
+    height: 28px;
+}
+
+.top-bar-menu:hover {
+    filter: invert();
+}
+
+.intro-box {
+    display: flex;
+    flex-direction: row;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.intro-text {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: white;
 }

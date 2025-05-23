@@ -108,16 +108,22 @@ h2 {
     font-weight: 600;
     font-size: 3.25em;
     line-height: 1.1em;
+    letter-spacing: 0.05em;
     color: white;
     width: 400px;
     margin-top: 10px;
     margin-bottom: 15px;
 }
 
+p {
+    
+}
+
 .intro-description {
     font-family: 'DM Sans', sans-serif;
     font-size: 22px;
     font-weight: 400;
+    letter-spacing: .05em;
     color: rgb(197, 197, 197);
     margin-top: 10px;
     margin-bottom: 20px;
@@ -182,6 +188,7 @@ h2 {
 
 .middle-box {
     display: flex;
-    background-color: rgb(31, 31, 31);
+    background-color: rgb(39, 39, 39);
     margin-top: -23px;
+    border-top: 3px solid white;
 }

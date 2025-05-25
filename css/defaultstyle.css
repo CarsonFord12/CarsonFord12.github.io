@@ -4,11 +4,25 @@ body {
     margin: 8px 0px 0px 0px;
 }
 
+h1 {
+    font-family: 'Neuton', sans-serif;
+    font-weight: 700;
+    font-size: 6em;
+    line-height: 0.9em;
+    color: white;
+}
+
+h2 {
+    font-family: 'Neuton', sans-serif;
+    font-weight: 600;
+    font-size: 3.25em;
+    line-height: 1.1em;
+    letter-spacing: 0.05em;
+    color: white;
+}
+
 @keyframes hue-anim{
     0% {filter:hue-rotate(0deg);}
-    25% {filter:hue-rotate(90deg);}
-    50% {filter:hue-rotate(180deg);}
-    75% {filter:hue-rotate(270deg);}
     100% {filter:hue-rotate(360deg);}
 }
 
@@ -93,30 +107,15 @@ body {
     margin-left: 60px;
 }
 
-h1 {
-    font-family: 'Neuton', sans-serif;
-    font-weight: 700;
-    font-size: 6em;
-    line-height: 0.9em;
-    color: white;
+h1.intro-name {
     margin-top: 0px;
     margin-bottom: 10px;
 }
 
-h2 {
-    font-family: 'Neuton', sans-serif;
-    font-weight: 600;
-    font-size: 3.25em;
-    line-height: 1.1em;
-    letter-spacing: 0.05em;
-    color: white;
+h2.intro-specialization {
     width: 400px;
     margin-top: 10px;
     margin-bottom: 15px;
-}
-
-p {
-    
 }
 
 .intro-description {
@@ -133,7 +132,6 @@ p {
     scale: 95%;
     margin-left: -60px;
     margin-top: -20px;
-    
 }
 
 .intro-buttons {
@@ -188,7 +186,10 @@ p {
 
 .middle-box {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-color: rgb(39, 39, 39);
     margin-top: -23px;
-    border-top: 3px solid white;
+    border-top: 2px solid white;
 }
